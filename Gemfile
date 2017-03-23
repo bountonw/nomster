@@ -51,12 +51,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-# Use Bootstrap
+# gems added by Brian Wilson
 gem 'bootstrap', '~> 4.0.0.alpha6'
-
-# Simple Form
 gem 'simple_form'
-
-# Use font awesome
 gem 'font-awesome-rails'
+gem 'devise'
