@@ -138,6 +138,9 @@ SimpleForm.setup do |config|
   # Namespaces where SimpleForm should look for custom input classes that
   # override default inputs.
   # config.custom_inputs_namespaces << "CustomInputs"
+ 
+  # Remove asterisk beside user input boxes
+  # config.label_text = lambda { |label, required| "#{label}" }
 
   # Default priority for time_zone inputs.
   # config.time_zone_priority = nil
