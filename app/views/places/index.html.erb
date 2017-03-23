@@ -1,4 +1,4 @@
-<div class="col-10 offset-1 text-right">
+<div class="col-10 offset-1">
   <p><%= paginate @places %></p>
 </div>
 
@@ -7,10 +7,13 @@
     <h1><%= place.name %></h1>
     <i><%= place.address %></i><br />
     <p> <%= place.description %> </p><br />
+
+    <% if place.user.present? %>
+      <small><%= place.user.email %></small>
+    <% end %>
   </div>
 <% end %>
 
-
-<div class="col-10 offset-1 pagination">
+<div class="col-10 offset-1">
   <%= paginate @places %>
 </div>
