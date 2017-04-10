@@ -116,10 +116,15 @@
 </div>
 
 <div class="clear"></div>
-<% @place.photos.each do |photo| %>
-  <%= image_tag photo.picture %>
-  <%= photo.caption %>
-<% end %>
+
+<div class="row">
+  <div class="center-block">
+    <% @place.photos.each do |photo| %>
+      <%= image_tag photo.picture, :class => "photo" %>
+      <%= photo.caption %>
+    <% end %>
+  </div>
+</div>
 
 <div class="clear"></div>
 

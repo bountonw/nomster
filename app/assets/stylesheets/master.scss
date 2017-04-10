@@ -71,3 +71,15 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+.photo {
+  width: 100%;
+  max-width: 600px;
+  margin: 3px;
+}
+
+.center-block {
+  display: block;  
+  margin-right: auto;  
+  margin-left: auto; 
+}
