@@ -73,29 +73,15 @@ blockquote p {
   display: inline;
 }
 
-.photo {
-  position: relative;
-  max-width: 80%;
-  max-height: 300px;
-  margin: 3px auto;
-}
+/*.img-fluid {
+  margin: 0 auto;
+}*/
 
-
-.photo_caption {
-  position: absolute;
-  bottom: -90px;
-  text-align:  center;
-  vertical-align: bottom;
-  width: 100%;
-  color: white;
+figcaption {
   background-color: rgba(0, 0, 0, 0.5);
   text-shadow: rgba(0, 0, 0, 0.95);
   font-size: 40px;
-}
-
-.comments {
-  position: absolute;
-  margin: 10px;
+  text-align: center;
 }
 
 .center-block {

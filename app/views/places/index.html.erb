@@ -38,6 +38,13 @@
     <i><%= place.address %></i><br /> <br />
     <p> <%= place.description %> </p><br />
 
+    <% if place.photos.last.picture.present? %>
+      <figure>
+        <%= image_tag place.photos.last.picture, class: "img-fluid" %>
+        <figcaption><%= place.photos.last.caption %></figcaption>
+      </figure>
+    <% end %>
+    
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
     <% end %>
